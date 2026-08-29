@@ -1,1 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>BFL CLAN | Free Fire</title>
+
+  <meta
+    name="description"
+    content="Official BFL CLAN Free Fire gaming community. Meet our players, leaders and tournament community."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       ENTRY SCREEN
+  ========================== -->
+
+  <div class="entry-screen" id="entryScreen">
+
+    <div class="entry-content">
+
+      <div class="entry-badge">
+        FREE FIRE GAMING COMMUNITY
+      </div>
+
+      <h1>
+        BFL <span>CLAN</span>
+      </h1>
+
+      <p>
+        BUILT TO RUSH. BUILT TO WIN.
+      </p>
+
+      <div class="member-counter">
+
+        <strong>55</strong>
+
+        <span>
+          BFL CLAN MEMBERS
+        </span>
+
+      </div>
+
+      <button
+        class="main-button"
+        id="enterClanBtn"
+        type="button"
+      >
+        ENTER BFL CLAN →
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       WEBSITE
+  ========================== -->
+
+  <div id="website" class="hidden">
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+      <a
+        href="#home"
+        class="logo"
+      >
+        BFL <span>CLAN</span>
+      </a>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open menu"
+      >
+        ☰
+      </button>
+
+      <nav id="navigation">
+
+        <a href="#home">
+          Home
+        </a>
+
+        <a href="#players">
+          Players
+        </a>
+
+        <a href="#leadership">
+          Leadership
+        </a>
+
+        <a href="#tournaments">
+          Tournaments
+        </a>
+
+        <a href="#join">
+          Join Us
+        </a>
+
+        <a href="#admin">
+          Admin
+        </a>
+
+      </nav>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+      <section
+        class="hero"
+        id="home"
+      >
+
+        <div>
+
+          <div class="small-title">
+            OFFICIAL BFL CLAN WEBSITE
+          </div>
+
+          <h2>
+            ONE CLAN.
+            <span>55 PLAYERS.</span>
+            ONE FAMILY.
+          </h2>
+
+          <p>
+            Welcome to BFL CLAN — a Free Fire gaming
+            community built around teamwork, competition,
+            skill and good vibes.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a
+              href="#players"
+              class="main-button"
+            >
+              VIEW PLAYERS
+            </a>
+
+            <a
+              href="#join"
+              class="secondary-button"
+            >
+              JOIN BFL
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="member-card">
+
+          <div class="fire-icon">
+            🔥
+          </div>
+
+          <strong>
+            55
+          </strong>
+
+          <span>
+            MEMBERS STRONG
+          </span>
+
+          <div class="community-status">
+            ● BFL CLAN ACTIVE
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           LEADERSHIP
+      ========================== -->
+
+      <section
+        class="section leadership-section"
+        id="leadership"
+      >
+
+        <div class="small-title">
+          BFL MANAGEMENT
+        </div>
+
+        <h2>
+          Leadership
+        </h2>
+
+        <p>
+          Meet the people helping lead and manage
+          BFL CLAN.
+        </p>
+
+        <div
+          class="player-grid"
+          id="leadershipGrid"
+        >
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           PLAYERS
+      ========================== -->
+
+      <section
+        class="section"
+        id="players"
+      >
+
+        <div class="section-heading">
+
+          <div>
+
+            <div class="small-title">
+              THE SQUAD
+            </div>
+
+            <h2>
+              BFL Players
+            </h2>
+
+          </div>
+
+          <input
+            type="search"
+            id="playerSearch"
+            class="search-box"
+            placeholder="Search players..."
+            autocomplete="off"
+          >
+
+        </div>
+
+
+        <div class="filter-buttons">
+
+          <button
+            class="filter active"
+            data-filter="all"
+            type="button"
+          >
+            All Players
+          </button>
+
+          <button
+            class="filter"
+            data-filter="leadership"
+            type="button"
+          >
+            Leadership
+          </button>
+
+          <button
+            class="filter"
+            data-filter="members"
+            type="button"
+          >
+            Members
+          </button>
+
+          <button
+            class="filter"
+            data-filter="achievement"
+            type="button"
+          >
+            Top Achievements
+          </button>
+
+        </div>
+
+
+        <div
+          class="player-grid"
+          id="playerGrid"
+        >
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           TOURNAMENTS
+      ========================== -->
+
+      <section
+        class="section"
+        id="tournaments"
+      >
+
+        <div class="small-title">
+          COMPETITION
+        </div>
+
+        <h2>
+          Tournament List
+        </h2>
+
+        <p>
+          Tournament information will appear here
+          when BFL CLAN has an upcoming event.
+        </p>
+
+        <div
+          class="tournament-list"
+          id="tournamentList"
+        >
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           ANNOUNCEMENTS
+      ========================== -->
+
+      <section
+        class="section announcements-section"
+        id="announcements"
+      >
+
+        <div class="small-title">
+          BFL NEWS
+        </div>
+
+        <h2>
+          Announcements
+        </h2>
+
+        <div
+          class="announcement-list"
+          id="announcementList"
+        >
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           JOIN BFL
+      ========================== -->
+
+      <section
+        class="section join-section"
+        id="join"
+      >
+
+        <div class="join-content">
+
+          <div class="small-title">
+            WANT TO JOIN?
+          </div>
+
+          <h2>
+            Join BFL CLAN
+          </h2>
+
+          <p>
+            Interested in joining BFL CLAN?
+            Contact our members through the available
+            social platforms.
+          </p>
+
+          <div
+            class="contact-list"
+            id="contactList"
+          >
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           ADMIN
+      ========================== -->
+
+      <section
+        class="section admin-section"
+        id="admin"
+      >
+
+        <div class="admin-card">
+
+          <div class="small-title">
+            PRIVATE AREA
+          </div>
+
+          <h2>
+            BFL Admin Dashboard
+          </h2>
+
+          <p>
+            Authorized BFL administrators can access
+            the management area.
+          </p>
+
+          <button
+            class="main-button"
+            id="adminLoginButton"
+            type="button"
+          >
+            ADMIN LOGIN
+          </button>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- =========================
+         PLAYER PROFILE MODAL
+    ========================== -->
+
+    <div
+      class="modal hidden"
+      id="profileModal"
+      role="dialog"
+      aria-modal="true"
+    >
+
+      <div class="modal-box">
+
+        <button
+          class="close-modal"
+          data-close-profile
+          type="button"
+          aria-label="Close profile"
+        >
+          ×
+        </button>
+
+        <div id="profileContent">
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         ADMIN LOGIN MODAL
+    ========================== -->
+
+    <div
+      class="modal hidden"
+      id="adminModal"
+      role="dialog"
+      aria-modal="true"
+    >
+
+      <div class="modal-box admin-login">
+
+        <button
+          class="close-modal"
+          data-close-admin
+          type="button"
+          aria-label="Close admin login"
+        >
+          ×
+        </button>
+
+        <div class="small-title">
+          AUTHORIZED ACCESS
+        </div>
+
+        <h2>
+          Admin Login
+        </h2>
+
+        <label for="adminUsername">
+          Username
+        </label>
+
+        <input
+          type="text"
+          id="adminUsername"
+          placeholder="Enter username"
+          autocomplete="username"
+        >
+
+        <label for="adminPassword">
+          Password
+        </label>
+
+        <input
+          type="password"
+          id="adminPassword"
+          placeholder="Enter password"
+          autocomplete="current-password"
+        >
+
+        <button
+          class="main-button"
+          id="loginButton"
+          type="button"
+        >
+          LOGIN
+        </button>
+
+        <div
+          class="login-message"
+          id="loginMessage"
+        >
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         ADMIN DASHBOARD
+    ========================== -->
+
+    <div
+      class="modal hidden"
+      id="dashboardModal"
+      role="dialog"
+      aria-modal="true"
+    >
+
+      <div class="modal-box">
+
+        <button
+          class="close-modal"
+          data-close-dashboard
+          type="button"
+          aria-label="Close dashboard"
+        >
+          ×
+        </button>
+
+        <div class="small-title">
+          BFL MANAGEMENT
+        </div>
+
+        <h2>
+          Admin Dashboard
+        </h2>
+
+        <p>
+          Welcome to the BFL CLAN management area.
+        </p>
+
+
+        <div class="dashboard-card">
+
+          <h3>
+            👥 Players
+          </h3>
+
+          <p>
+            Manage player information and achievements.
+          </p>
+
+          <button
+            class="secondary-button"
+            id="addPlayerButton"
+            type="button"
+          >
+            Manage Players
+          </button>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+          <h3>
+            🏆 Tournaments
+          </h3>
+
+          <p>
+            Add or update future BFL tournaments.
+          </p>
+
+          <button
+            class="secondary-button"
+            id="addTournamentButton"
+            type="button"
+          >
+            Manage Tournaments
+          </button>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+          <h3>
+            📢 Announcements
+          </h3>
+
+          <p>
+            Add important clan announcements.
+          </p>
+
+          <button
+            class="secondary-button"
+            id="addAnnouncementButton"
+            type="button"
+          >
+            Manage Announcements
+          </button>
+
+        </div>
+
+
+        <button
+          class="logout-button"
+          id="logoutButton"
+          type="button"
+        >
+          Log out
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+      <span>
+        © 2026 BFL CLAN
+      </span>
+
+      <span>
+        Free Fire Gaming Community
+      </span>
+
+    </footer>
+
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="app.js"></script>
+
+</body>
+</html>
